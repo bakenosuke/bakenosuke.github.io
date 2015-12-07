@@ -1,0 +1,78 @@
+/* Layout */
+body {
+    max-width:900px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+address {
+    margin:0;
+}
+
+/* Header */
+
+/* Logo */
+.skill-logo img, .education-logo img, .social img {
+    border-radius: 5px;
+    padding:2px;
+}
+
+/* Profile */
+
+#contact {
+    font-weight:bold;
+    font-size:16px;
+}
+
+.social img {
+    height:20px;
+    width:20px;
+    margin-top:-4px;
+}
+
+/* Skills */
+
+.skill {
+    padding:5px 0 0 0;
+    margin-top:0px;
+}
+
+.skill-logo img {
+    height:35px;
+    width:35px;
+}
+
+.skill-body {
+    margin-left:35px;
+}
+
+.skill-name {
+    font-weight:bold;
+}
+
+.skill-level{
+    color:#449d44;
+}
+
+.skill-level-bar .progress, .education-level-bar .progress {
+    height:10px;
+    margin-bottom:0px;
+}
+
+/* Experience */
+
+
+/* Education */
+.education-logo img {
+    height:60px;
+    width:60px;
+}
+
+.education-title {
+    font-weight:bold;
+}
+
+
+/* Footer */
