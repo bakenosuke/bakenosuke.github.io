@@ -67,6 +67,9 @@ address {
 
 /* Experience */
 
+#experiences ul {
+    padding-left:20px;
+}
 
 /* Education and Certification */
 .education-logo img, .certification-logo img, .experience-logo img {
