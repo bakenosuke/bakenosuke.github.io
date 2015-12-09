@@ -26,6 +26,10 @@ address {
     font-size:16px;
 }
 
+#contact a {
+    font-weight:normal;
+}
+
 .social img {
     height:20px;
     width:20px;
@@ -52,11 +56,11 @@ address {
     font-weight:bold;
 }
 
-.skill-level{
+.skill-level {
     color:#449d44;
 }
 
-.skill-level-bar .progress, .education-level-bar .progress, .certification-level-bar .progress {
+.skill-level-bar .progress, .education-level-bar .progress, .certification-level-bar .progress, .experience-level-bar .progress {
     height:10px;
     margin-bottom:0px;
 }
