@@ -83,3 +83,15 @@ address {
 
 
 /* Footer */
+
+
+
+
+
+/* Repsonsive */
+
+@media (max-width: 767px) {
+    #contact {
+        font-size:14px;
+    }
+}
