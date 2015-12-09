@@ -118,8 +118,8 @@ address {
         float:left;
     }
 
-    #skills, #header, #certifications, #experiences .experience, #education {
-        page-break-inside: avoid;
+    #certifications {
+        page-break-after: always;
     }
 
     .progress{
