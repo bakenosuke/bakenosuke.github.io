@@ -1,6 +1,10 @@
 /* Layout */
 body {
-    max-width:900px;
+    font-size: 14px;
+}
+
+.visible-print-block {
+    display:none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,8 +15,15 @@ address {
     margin:0;
 }
 
-/* Header */
+.card {
+    margin-top: 15px;
+}
 
+.card-header {
+    font-weight: bold;
+}
+
+/* Header */
 
 /* Logo */
 .skill-logo img, .education-logo img, .social img {
@@ -44,13 +55,18 @@ address {
     margin-top:0px;
 }
 
+.skill-logo {
+    float:left;
+}
+
 .skill-logo img {
     height:35px;
     width:35px;
 }
 
 .skill-body {
-    margin-left:35px;
+    margin-left:45px;
+    min-height:45px;
 }
 
 .skill-name {
@@ -67,6 +83,13 @@ address {
 }
 
 /* Experience */
+.experience-logo {
+    float:left;
+}
+
+.experience-body {
+    margin-left:70px;
+}
 
 #experiences ul {
     padding-left:20px;
@@ -78,7 +101,7 @@ address {
     max-width:60px;
 }
 
-.education-title, .certification-title, .experience-title {
+.education-title, .certification-title, .experience-title, .experience-company {
     font-weight:bold;
 }
 
@@ -104,13 +127,19 @@ address {
     a[href]:after {
         content:"";
     }
+    .sr-only {
+        display:none;
+    }
+    .visible-print-block {
+        display:block;
+    }
 
     #footer a[href]:after {
         content:" ("attr(href)")";
     }
 
     #contact {
-        line:height:33px;
+        line-height:33px;
     }
 
     .media .media-left {

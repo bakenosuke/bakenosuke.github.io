@@ -5,18 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
     <title>Bo Wang - Résumé</title>
     <link rel="shortcut icon" href="images/icons/favicon.ico">
     <!-- Bootstrap -->
-    <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" media="all"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous">
-
+    <!-- Site specific styles -->
     <link rel="stylesheet" href="css/main.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,48 +24,59 @@
     <![endif]-->
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-      ga('create', 'UA-71679963-1', 'auto');
-      ga('send', 'pageview');
+        ga('create', 'UA-71679963-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 </head>
 <body class="container-fluid">
 <div id="header">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <div id="contact" class="row">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
                 <div id="name" class="col-xs-12 col-md-6 text-center">
                     Bo Wang
                 </div>
-                <div class="col-xs-12 col-md-6 text-center">
+                <div id="jobtitle" class="col-xs-12 col-md-6 text-center">
                     Senior Developer/Architect
                 </div>
+            </div>
+            <div class="row">
                 <div id="email" class="col-xs-12 col-md-6 text-center">
                     <a href="mailto:bakenosuke@gmail.com">bakenosuke@gmail.com</a>
                 </div>
                 <div id="phone" class="col-xs-12 col-md-6 text-center">
                     <a href="tel:+61-430-114-869">+61 430-114-869</a>
                 </div>
+            </div>
+            <div class="row">
                 <div id="linkedin" class="col-xs-12 text-center">
-                    <a class="social" href="https://au.linkedin.com/in/bakenosuke">
-                        <img src="images/logos/linkedin.png"/> https://au.linkedin.com/in/bakenosuke
-                    </a>
+                    <a class="social" href="https://au.linkedin.com/in/bakenosuke"><img
+                            src="images/logos/linkedin.png"/></a>
+                    <a class="social"
+                       href="https://au.linkedin.com/in/bakenosuke">https://au.linkedin.com/in/bakenosuke</a>
                 </div>
             </div>
         </div>
-        <div class="panel-body">
+        <div class="card-body">
             <div id="profile">
                 <p>
                     A passionate full-stack developer and architect with over 10 years of commercial experience across a
                     wide variety of technologies and disciplines, having exposure to the full lifecycle of using
                     software to provide solutions to business problems.
                 </p>
-
                 <p>
                     He has had experience in the full software development lifecycle in developing enterprise
                     applications both in on-premise and cloud solutions used by some of the world's leading software
@@ -76,14 +84,12 @@
                     technology services projects, having fulfilled the roles of business analyst, presales, project
                     management, training, support and consultation.
                 </p>
-
                 <p>
                     He is constantly questioning the status quo in order to push the boundaries and grow both the
                     product as well as as an individual, this has been a core strength which has taken him to his
                     current role as part of the core engineering team to develop an innovative new lending platform and
                     risk engine in a disruptive and growing fintech company.
                 </p>
-
             </div>
         </div>
     </div>
@@ -97,32 +103,34 @@
     <!-- Skills Start -->
     <div id="skills" class="row">
         <!-- Skills - Technical Start -->
-        <div class="skills-section col-xs-12 col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="skill-section-title">Technical Skills</h4>
+        <div class="skills-section col-6 col-xs-12">
+            <div class="card">
+                <div class="card-header">
+                    Technical Skills
                 </div>
-                <div class="panel-body">
-
+                <div class="card-body">
                     <!-- Skills - Technical - Java Start-->
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
+                    <div class="skill">
+                        <div class="skill-logo">
                             <img style="" src="images/logos/java.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Java
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Java + Kotlin
+                                </div>
+                                <div class="col skill-level text-end">
+                                    15 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                10 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="100"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 100%;">
-                                        <span class="sr-only">10 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 100%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -130,501 +138,461 @@
                     </div>
                     <!-- Skills - Technical - Java End -->
 
-                    <!-- Skills - Technical - jQuery Start-->
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/logos/jquery.gif"/>
+                    <!-- Skills - Technical - Integration Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img style="" src="images/icons/integration.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                HTML, CSS & JavaScript
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Integration
+                                </div>
+                                <div class="col skill-level text-end">
+                                    14 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                10 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="100"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 100%;">
-                                        <span class="sr-only">10 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 93.333%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Skills - Technical - jQuery End -->
+                    <!-- Skills - Technical - Integration End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/integration.png"/>
+                    <!-- Skills - Technical - Security Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img style="" src="images/icons/security.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Integration & SOA
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Security and SSO
+                                </div>
+                                <div class="col skill-level text-end">
+                                    13 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                9 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="90"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 90%;">
-                                        <span class="sr-only">9 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 86.666%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Technical - Security End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/security.png"/>
+                    <!-- Skills - Technical - Architecture Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img style="" src="images/icons/architect.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Security & SSO
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Software Architecture
+                                </div>
+                                <div class="col skill-level text-end">
+                                    12 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                8 years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="80"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 80%;">
-                                        <span class="sr-only">8 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 80%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Technical - Architecture End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/architect.png"/>
+                    <!-- Skills - Technical - Web Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img style="" src="images/logos/jquery.gif"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Software Architecture
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Web Development
+                                </div>
+                                <div class="col skill-level text-end">
+                                    12 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                7 years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="70"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 70%;">
-                                        <span class="sr-only">7 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 80%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Technical - Web End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/cloud.png"/>
+                    <!-- Skills - Technical - AWS Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img style="" src="images/icons/aws.jpg"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Cloud Technology
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    AWS
+                                </div>
+                                <div class="col skill-level text-end">
+                                    7 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                6 years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="60"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 60%;">
-                                        <span class="sr-only">6 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 46.666%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Technical - AWS End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/ecommerce.png"/>
+                    <!-- Skills - Technical - Microservice Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img style="" src="images/icons/microservice.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                E-Commerce
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Microservice
+                                </div>
+                                <div class="col skill-level text-end">
+                                    5 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                3 years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="30"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 30%;">
-                                        <span class="sr-only">3 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 33.333%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/microservice.png"/>
-                        </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Microservice Design
-                            </div>
-                            <div class="skill-level text-right">
-                                2 years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="20"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 20%;">
-                                        <span class="sr-only">2 years</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/aws.jpg"/>
-                        </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                AWS
-                            </div>
-                            <div class="skill-level text-right">
-                                2 years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="20"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 20%;">
-                                        <span class="sr-only">2 years</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Skills - Technical - Microservice End -->
                 </div>
             </div>
         </div>
         <!-- Skills - Technical End -->
 
         <!-- Skills - Personal Start -->
-        <div class="skills-section col-xs-12 col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="skill-section-title">Non-Technical Skills</h4>
+        <div class="skills-section col-6 col-xs-12">
+            <div class="card">
+                <div class="card-header">
+                    Non-Technical Skills
                 </div>
-                <div class="panel-body">
-
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/design.png"/>
+                <div class="card-body">
+                    <!-- Skills - Personal - Solution Design Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img style="" src="images/icons/design.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Solution Design
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Solution Design
+                                </div>
+                                <div class="col skill-level text-end">
+                                    15 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                10 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="100"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 100%;">
-                                        <span class="sr-only">10 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 100%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Personal - Solution Design End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
+                    <!-- Skills - Personal - Planning and Estimation Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
                             <img src="images/icons/planning.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Planning and Estimation
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Planning and Estimation
+                                </div>
+                                <div class="col skill-level text-end">
+                                    13 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                8 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="80"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 80%;">
-                                        <span class="sr-only">8 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 86.666%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Personal - Planning and Estimation End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
+                    <!-- Skills - Personal - Agile Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
                             <img src="images/icons/scrum.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Agile Development
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Agile Development
+                                </div>
+                                <div class="col skill-level text-end">
+                                    11 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                6 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="60"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 60%;">
-                                        <span class="sr-only">6 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 73.333%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Personal - Agile End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
+                    <!-- Skills - Personal - Leadership Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
                             <img src="images/icons/leadership.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Mentoring & Leadership
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Mentoring and Leadership
+                                </div>
+                                <div class="col skill-level text-end">
+                                    8 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                5 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="50"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 50%;">
-                                        <span class="sr-only">5 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 53.333%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Personal - Leadership End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/consulting.png"/>
-                        </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Consulting
-                            </div>
-                            <div class="skill-level text-right">
-                                3 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="30"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 30%;">
-                                        <span class="sr-only">3 years</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
-                            <img src="images/icons/pair.png"/>
-                        </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Pair Programming
-                            </div>
-                            <div class="skill-level text-right">
-                                2 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="20"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 20%;">
-                                        <span class="sr-only">2 years</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
+                    <!-- Skills - Personal - Project Management Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
                             <img src="images/icons/management.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Project Management
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Project Management
+                                </div>
+                                <div class="col skill-level text-end">
+                                    5 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                1.5 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="15"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 15%;">
-                                        <span class="sr-only">1.5 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 33.333%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Personal - Project Management End -->
 
-                    <div class="skill media">
-                        <div class="skill-logo media-left media-top">
+                    <!-- Skills - Personal - Dance Instructor Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
                             <img src="images/icons/dance.png"/>
                         </div>
-                        <div class="skill-body media-body">
-                            <div class="skill-name pull-left">
-                                Dance Instructor
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Dance Instructor
+                                </div>
+                                <div class="col skill-level text-end">
+                                    4 Years
+                                </div>
                             </div>
-                            <div class="skill-level text-right">
-                                1.5 Years
-                            </div>
-                            <div class="skill-level-bar">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                         aria-valuenow="15"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100" style="width: 15%;">
-                                        <span class="sr-only">1.5 years</span>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 26.666%;">
+                                            <span class="sr-only"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Skills - Personal - Dance Instructor End -->
+
+                    <!-- Skills - Personal - Consulting Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img src="images/icons/consulting.png"/>
+                        </div>
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Consulting
+                                </div>
+                                <div class="col skill-level text-end">
+                                    3 Years
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 20%;">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skills - Personal - Consulting End -->
+
+                    <!-- Skills - Personal - Pair Programming Start-->
+                    <div class="skill">
+                        <div class="skill-logo">
+                            <img src="images/icons/pair.png"/>
+                        </div>
+                        <div class="skill-body">
+                            <div class="row">
+                                <div class="col skill-name text-start">
+                                    Pair Programming
+                                </div>
+                                <div class="col skill-level text-end">
+                                    2 Years
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="skill-level-bar">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 13.333%;">
+                                            <span class="sr-only"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skills - Personal - Pair Programming End -->
                 </div>
             </div>
         </div>
         <!-- Skills - Personal End -->
-
     </div>
     <!-- Skills End -->
 
-    <!-- Certifications - Start -->
-    <div id="certifications" class="panel panel-default">
-        <div class="panel-heading">
-            <h4>Certifications</h4>
-        </div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="certification col-xs-12 media">
-                    <div class="certification-logo media-left media-top">
-                        <img src="images/logos/java.png"/>
-                    </div>
-                    <div class="certification-body media-body">
-                        <div class="certification-title">Sun Certified Java Programmer, SE 6</div>
-
-                        <div class="certification-start pull-left">
-                            March 2010
-                        </div>
-                        <div class="certification-end text-right">
-                            Present
-                        </div>
-                        <div class="certification-level-bar">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">March 2010 to Present</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="certification col-xs-12 media">
-                    <div class="certification-logo media-left media-top">
-                        <img src="images/logos/mcts.png"/>
-                    </div>
-                    <div class="certification-body media-body">
-                        <div class="certification-title">MCTS: Microsoft Office SharePoint Server 2007, Configuration
-                        </div>
-
-                        <div class="certification-start pull-left">
-                            August 2008
-                        </div>
-                        <div class="certification-end text-right">
-                            Present
-                        </div>
-                        <div class="certification-level-bar">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">August 2008 to Present</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Certifications - End -->
-
     <!-- Experiences - Start -->
-    <div id="experiences" class="panel panel-default">
-        <div class="panel-heading">
-            <h4>Experience</h4>
+    <div class="card">
+        <div class="card-header">
+            Experience
         </div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="experience col-xs-12 media">
-                    <div class="experience-logo media-left media-top">
-                        <img src="images/logos/waddle.png"/>
-                    </div>
-                    <div class="experience-body media-body">
-                        <div class="experience-title">
-                            Waddle<br/>
-                            Engineer
+        <div class="card-body">
+            <!-- Experience - Waddle - Start -->
+            <div class="experience">
+                <div class="experience-logo">
+                    <img src="images/logos/waddle.png"/>
+                </div>
+                <div class="experience-body">
+                    <div class="row">
+                        <div class="col-12 experience-company text-start">
+                            Waddle
                         </div>
-                        <div class="experience-start pull-left">
+                        <div class="col-12 experience-title text-start">
+                            Lead Engineer
+                        </div>
+                        <div class="col-6 experience-start text-start">
                             March 2018
                         </div>
-                        <div class="experience-end text-right">
+                        <div class="col-6 experience-end text-end">
                             Present
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="experience-level-bar">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">March 2018 to Present</span>
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only"></span>
                                 </div>
                             </div>
                         </div>
@@ -632,42 +600,79 @@
                 </div>
                 <div class="experience-summary col-xs-12">
                     <ul>
-                        <li>Standardised a new integration platform to abstract the bi-directional transfer of data between 9 different accounting platforms (such as Xero, Myob, FreeAgent, etc.)</li>
-                        <li>Built an extensible reporting engine which could amalgamate data across multiple sources to make better business and risk decisions</li>
-                        <li>Built a new internal on-boarding process including the procedures around doing credit checks and financial analysis for potential customers</li>
-                        <li>Designed and built an AWS Lamba driven scheduling system to run our job across a cluster of instances</li>
+                        <li>Designed and built a multi-tenanted, extensible middleware platform to standardise
+                            bi-directional integration with a wide range of accounting platforms
+                        </li>
+                        <li>
+                            Designed and built a testing framework to simplify the process of writing integration tests
+                            by an order of magnitude
+                        </li>
+                        <li>
+                            Designed and implemented collaboration tools such as knowledge bases, issue management,
+                            project management, etc.
+                        </li>
+                        <li>
+                            Designed and built a new internal on-boarding process including the procedures around doing
+                            credit checks and financial analysis for potential customers
+                        </li>
+                        <li>Defined architecture and standards for the coding, testing and structure of multiple
+                            platforms
+                        </li>
+                        <li>Partnered with and helped implement our lending platform for 6 financial institutions across
+                            3 countries
+                        </li>
+                        <li>Designed and built numerous reusable libraries to speed up development and maximise quality
+                        </li>
+                        <li>Advocated for practical excellence in engineering through shared vision and incremental
+                            improvements
+                        </li>
+                        <li>Work closely with the product team and partners to build solutions</li>
                         <li>Introduced centralised secure token management for connections to client systems</li>
                         <li>Introduced monitoring dashboards and alerts for various critical parts of the system</li>
+                        <li>Acquired by Xero in November 2020</li>
+                        <li>Achieved ISO certification in 2022</li>
                     </ul>
                     <p>
-                        Technologies used: Java, Spring, Hibernate, jQuery, HTML, CSS, Jenkins, Nexus, SOAP, REST, Kotlin, AWS, Maven, JUnit, JWebUnit, Tomcat, SSO, OAuth 2.0, Pact Testing, NodeJS, ReactJS, OpenAPI, Swagger
+                        Technologies used: Kotlin, Java, Spring, Hibernate, jQuery, HTML, CSS, Jenkins, Nexus, SOAP,
+                        REST, OpenBanking, CodePipeline, Elastic Beanstalk, WAF, DynamoDB, Aurora, Lambda, Maven, JUnit,
+                        JWebUnit, Tomcat, SSO, OAuth 2.0, SAML, NodeJS, ReactJS, NewRelic, SumoLogic, Graylog, Snyk,
+                        Sonar, OpenAPI, Swagger
                     </p>
                     <p>
                         Website: <a href="https://www.waddle.com.au">https://www.waddle.com.au</a>
                     </p>
                 </div>
+            </div>
+            <!-- Experience - Waddle - End -->
 
-                <div class="experience col-xs-12 media">
-                    <div class="experience-logo media-left media-top">
-                        <img src="images/logos/latin_motion.jpeg"/>
+            <hr/>
+
+            <!-- Experience - Tropical Soul - Start -->
+            <div class="experience">
+                <div class="experience-logo">
+                    <img src="images/logos/tropicalsoul.png"/>
+                </div>
+                <div class="experience-body">
+                    <div class="row">
+                        <div class="col-12 experience-company text-start">
+                            Tropical Soul
+                        </div>
+                        <div class="col-12 experience-title text-start">
+                            Salsa Instructor
+                        </div>
+                        <div class="col-6 experience-start text-start">
+                            August 2018
+                        </div>
+                        <div class="col-6 experience-end text-end">
+                            December 2021
+                        </div>
                     </div>
-                    <div class="experience-body media-body">
-                        <div class="experience-title">
-                            Latin Motion<br/>
-                            Salsa and Bachata Instructor
-                        </div>
-                        <div class="experience-start pull-left">
-                            July 2017
-                        </div>
-                        <div class="experience-end text-right">
-                            Present
-                        </div>
+                    <div class="row">
                         <div class="experience-level-bar">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">July 2017 to Present</span>
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only"></span>
                                 </div>
                             </div>
                         </div>
@@ -675,34 +680,94 @@
                 </div>
                 <div class="experience-summary col-xs-12">
                     <ul>
-                        <li>Regularly teach beginner and intermediate dance classes for the styles of Salsa and Bachata</li>
+                        <li>Regularly teach intermediate and advanced dance classes for the styles of Salsa</li>
+                        <li>Performed at numerous events both locally and internationally</li>
+                        <li>Choreographed dances for myself and others</li>
+                        <li>Placed in numerous professional competitions and won 1 title in 2018</li>
+                    </ul>
+                    <p>
+                        Website: <a href="https://www.tsdance.com.au">https://www.tsdance.com.au</a>
+                    </p>
+                </div>
+            </div>
+            <!-- Experience - Tropical Soul - End -->
+
+            <hr/>
+
+            <!-- Experience - Latin Motion - Start -->
+            <div class="experience">
+                <div class="experience-logo">
+                    <img src="images/logos/latin_motion.jpeg"/>
+                </div>
+                <div class="experience-body">
+                    <div class="row">
+                        <div class="col-12 experience-company text-start">
+                            Latin Motion
+                        </div>
+                        <div class="col-12 experience-title text-start">
+                            Salsa and Bachata Instructor
+                        </div>
+                        <div class="col-6 experience-start text-start">
+                            July 2017
+                        </div>
+                        <div class="col-6 experience-end text-end">
+                            October 2018
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="experience-level-bar">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-summary col-xs-12">
+                    <ul>
+                        <li>Regularly teach beginner and intermediate dance classes for the styles of Salsa and
+                            Bachata
+                        </li>
+                        <li>Placed in numerous amateur competitions and won 2 titles in 2017</li>
+                        <li>Winner of male staff member of the year 2018</li>
                     </ul>
                     <p>
                         Website: <a href="http://www.latinmotion.com.au">http://www.latinmotion.com.au</a>
                     </p>
                 </div>
+            </div>
+            <!-- Experience - Latin Motion - End -->
 
-                <div class="experience col-xs-12 media">
-                    <div class="experience-logo media-left media-top">
-                        <img src="images/logos/tyro.png"/>
-                    </div>
-                    <div class="experience-body media-body">
-                        <div class="experience-title">
-                            Tyro<br/>
+            <hr/>
+
+            <!-- Experience - Tyro - Start -->
+            <div class="experience">
+                <div class="experience-logo">
+                    <img src="images/logos/tyro.png"/>
+                </div>
+                <div class="experience-body">
+                    <div class="row">
+                        <div class="col-12 experience-company text-start">
+                            Tyro
+                        </div>
+                        <div class="col-12 experience-title text-start">
                             Engineer
                         </div>
-                        <div class="experience-start pull-left">
+                        <div class="col-6 experience-start text-start">
                             March 2016
                         </div>
-                        <div class="experience-end text-right">
+                        <div class="col-6 experience-end text-end">
                             March 2018
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="experience-level-bar">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">March 2016 to March 2018</span>
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only"></span>
                                 </div>
                             </div>
                         </div>
@@ -713,8 +778,11 @@
                         <li>Implemented the initial roll out of an innovative lending platform</li>
                         <li>Designed and developed a credit risk assessment engine</li>
                         <li>Worked on and helped define the microservice approach and methodology</li>
-                        <li>Worked with stakeholders to model our customer and credit profiling to accurately reflect the structure of each customer</li>
-                        <li>Drove up the focus on improving UX for users and best practices around UI implementation</li>
+                        <li>Worked with stakeholders to model our customer and credit profiling to accurately reflect
+                            the structure of each customer
+                        </li>
+                        <li>Drove up the focus on improving UX for users and best practices around UI implementation
+                        </li>
                         <li>Designed a system for cultivating and managing new ideas</li>
                         <li>Won Hackblitz - half day capture the flag style security competition</li>
                         <li>Won Codeblitz - 1.5 day competition to develop a demoable innovative idea)</li>
@@ -728,29 +796,37 @@
                         Website: <a href="https://www.tyro.com">https://www.tyro.com</a>
                     </p>
                 </div>
+            </div>
+            <!-- Experience - Tyro - End -->
 
-                <div class="experience col-xs-12 media">
-                    <div class="experience-logo media-left media-top">
-                        <img src="images/logos/learndot.png"/>
-                    </div>
-                    <div class="experience-body media-body">
-                        <div class="experience-title">
-                            ServiceRocket<br/>
+            <hr/>
+
+            <!-- Experience - ServiceRocket - Learndot - Start -->
+            <div class="experience">
+                <div class="experience-logo">
+                    <img src="images/logos/learndot.png"/>
+                </div>
+                <div class="experience-body">
+                    <div class="row">
+                        <div class="col-12 experience-company text-start">
+                            ServiceRocket
+                        </div>
+                        <div class="col-12 experience-title text-start">
                             Learndot - Architect/Lead Developer/Scrum Master
                         </div>
-
-                        <div class="experience-start pull-left">
+                        <div class="col-6 experience-start text-start">
                             November 2011
                         </div>
-                        <div class="experience-end text-right">
+                        <div class="col-6 experience-end text-end">
                             January 2016
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="experience-level-bar">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">November 2011 to January 2016</span>
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only"></span>
                                 </div>
                             </div>
                         </div>
@@ -787,29 +863,38 @@
                         Website: <a href="http://www.learndot.com">http://www.learndot.com</a>
                     </p>
                 </div>
+            </div>
+            <!-- Experience - ServiceRocket - Learndot - End -->
 
-                <div class="experience col-xs-12 media">
-                    <div class="experience-logo media-left media-top">
-                        <img src="images/logos/connectedbycustomware.png"/>
-                    </div>
-                    <div class="experience-body media-body">
-                        <div class="experience-title">
-                            CustomWare (now ServiceRocket)<br/>
-                            JIRA Connector Product Set - Architect/Lead Developer
-                        </div>
+            <hr/>
 
-                        <div class="experience-start pull-left">
-                            November 2010
+            <!-- Experience - ServiceRocket - Start -->
+            <div class="experience">
+                <div class="experience-logo">
+                    <img src="images/logos/servicerocket.jpg"/>
+                </div>
+                <div class="experience-body">
+                    <div class="row">
+                        <div class="col-12 experience-company text-start">
+                            ServiceRocket (formerly CustomWare)
                         </div>
-                        <div class="experience-end text-right">
+                        <div class="col-12 experience-title text-start">
+                            JIRA Connector Product Set - Architect/Lead Developer, Atlassian - Technology
+                            Consultant/Tech Lead
+                        </div>
+                        <div class="col-6 experience-start text-start">
+                            June 2008
+                        </div>
+                        <div class="col-6 experience-end text-end">
                             November 2011
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="experience-level-bar">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">November 2010 to November 2011</span>
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only"></span>
                                 </div>
                             </div>
                         </div>
@@ -829,53 +914,23 @@
                         <li>The Salesforce.com and JIRA Connector has since become the market leader for integrating the
                             two systems and is the company's most profitable extension to the JIRA platform
                         </li>
-                    </ul>
-                    <p>
-                        Technologies used: Java, Spring, Hibernate, jQuery, HTML, CSS, JIRA, Confluence, Bamboo, Clover,
-                        Crowd, SOAP, REST, OSGi, Velocity Templates, Active Objects, Cloud Applications, Maven, JUnit,
-                        JWebUnit, Tomcat
-                    </p>
-                    <p>
-                        Website: <a href="https://goo.gl/5f0zPd">https://goo.gl/5f0zPd</a>
-                    </p>
-                </div>
-
-
-                <div class="experience col-xs-12 media">
-                    <div class="experience-logo media-left media-top">
-                        <img src="images/logos/customware.png"/>
-                    </div>
-                    <div class="experience-body media-body">
-                        <div class="experience-title">
-                            CustomWare (now ServiceRocket)<br/>
-                            Atlassian - Technology Consultant/Tech Lead
-                        </div>
-
-                        <div class="experience-start pull-left">
-                            June 2008
-                        </div>
-                        <div class="experience-end text-right">
-                            November 2010
-                        </div>
-                        <div class="experience-level-bar">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">June 2008 to November 2010</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="experience-summary col-xs-12">
-                    <ul>
-                        <li>Providing business process modeling, best practice consulting, support, customizations, and implementation of Atlassian systems across a wide range of industries and applications</li>
+                        <li>Providing business process modeling, best practice consulting, support, customizations, and
+                            implementation of Atlassian systems across a wide range of industries and applications
+                        </li>
                         <li>Implementing reusable add-ons for the Atlassian suite of tools</li>
-                        <li>Integration between the Atlassian suite of tools with other applications that our customers are using, the integrations range from data synchronization to user experience (eg SSO, navigation portals, etc.) across a wide variety of systems</li>
-                        <li>Implementing automation for internal processes to reduce the amount of manual work required for certain tasks</li>
-                        <li>Defining best practices around the estimation and delivery and quality assurance of solutions</li>
-                        <li>Mentoring the team in development best practices, new technologies and how to apply them to solve business problems</li>
+                        <li>Integration between the Atlassian suite of tools with other applications that our customers
+                            are using, the integrations range from data synchronization to user experience (eg SSO,
+                            navigation portals, etc.) across a wide variety of systems
+                        </li>
+                        <li>Implementing automation for internal processes to reduce the amount of manual work required
+                            for certain tasks
+                        </li>
+                        <li>Defining best practices around the estimation and delivery and quality assurance of
+                            solutions
+                        </li>
+                        <li>Mentoring the team in development best practices, new technologies and how to apply them to
+                            solve business problems
+                        </li>
                     </ul>
                     <p>
                         Technologies used: Java, Spring, Hibernate, jQuery, HTML, CSS, JIRA, Confluence, Bamboo, Clover,
@@ -888,39 +943,43 @@
                     </p>
                 </div>
             </div>
+            <!-- Experience - ServiceRocket - End -->
+
         </div>
     </div>
     <!-- Experiences - End -->
 
     <!-- Education - Start -->
-    <div id="education" class="panel panel-default">
-        <div class="panel-heading">
-            <h4>Education</h4>
-        </div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="education col-xs-12 media">
-                    <div class="education-logo media-left media-top">
-                        <img src="images/logos/usyd.png"/>
-                    </div>
-                    <div class="education-body media-body">
-                        <div class="education-title">
-                            University of Sydney<br/>
+    <div id="education">
+        <div class="card">
+            <div class="card-header">
+                Education
+            </div>
+            <div class="card-body">
+                <div class="education-logo">
+                    <img src="images/logos/usyd.png"/>
+                </div>
+                <div class="education-body">
+                    <div class="row">
+                        <div class="col-12 education-company text-start">
+                            University of Sydney
+                        </div>
+                        <div class="col-12 education-title text-start">
                             Bachelor of Software Engineering (Class 2 Honours)
                         </div>
-
-                        <div class="education-start pull-left">
+                        <div class="col-6 education-start text-start">
                             March 2004
                         </div>
-                        <div class="education-end text-right">
+                        <div class="col-6 education-end text-end">
                             November 2007
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="education-level-bar">
                             <div class="progress">
                                 <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100"
-                                     aria-valuemin="0"
-                                     aria-valuemax="100" style="width: 100%;">
-                                    <span class="sr-only">March 2004 to November 2007</span>
+                                     aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    <span class="sr-only"></span>
                                 </div>
                             </div>
                         </div>
@@ -932,12 +991,14 @@
     <!-- Education - End -->
 
     <!-- References - Start -->
-    <div id="references" class="panel panel-default">
-        <div class="panel-heading">
-            <h4>References</h4>
-        </div>
-        <div class="panel-body">
-            References available upon request.
+    <div id="references">
+        <div class="card">
+            <div class="card-header">
+                References
+            </div>
+            <div class="card-body">
+                References available upon request.
+            </div>
         </div>
     </div>
     <!-- References - End -->
@@ -956,10 +1017,14 @@
     </div>
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 
