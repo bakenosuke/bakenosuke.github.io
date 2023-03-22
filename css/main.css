@@ -136,6 +136,10 @@ address {
         display: block;
     }
 
+    .hidden-print-block {
+        display: none;
+    }
+
     #footer a[href]:after {
         content: " (" attr(href) ")";
     }
@@ -149,21 +153,24 @@ address {
         float: left;
     }
 
+    .skill {
+        padding: 0;
+    }
+
     .progress {
         background-color: #F5F5F5 !important;
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F5F5F5', endColorstr='#F5F5F5')" !important;
     }
 
     .progress-bar-info {
         display: block !important;
         background-color: #5BC0DE !important;
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5BC0DE', endColorstr='#5BC0DE')" !important;
+        height: 10px;
     }
 
     .progress-bar-success {
         display: block !important;
         background-color: #5cb85c !important;
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5cb85c', endColorstr='#5cb85c')" !important;
+        height: 10px;
     }
 
     .progress, .progress > .progress-bar {
