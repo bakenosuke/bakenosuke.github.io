@@ -1,0 +1,51 @@
+css/main.css
+  40a3a625d636235b 711-715
+js/main.js
+  fc2dddb7fdf8f924 67,69,72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "f2476d6d7dcd65c09301022f701ea35bb84bac81",
+  "prompts": {
+    "40a3a625d636235b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-b8730197-d517-4680-8057-54191053b193",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 5,
+      "total_deletions": 0,
+      "accepted_lines": 5,
+      "overriden_lines": 0
+    },
+    "f49bf10659a8d7f0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-6803e507-33d5-4404-9881-fd78624853a9",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 2,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    },
+    "fc2dddb7fdf8f924": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-7367437b-891b-42d0-842b-e78db73533f4",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 6,
+      "total_deletions": 17,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    }
+  }
+}
