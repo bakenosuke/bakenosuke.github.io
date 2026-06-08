@@ -294,11 +294,13 @@ hr {
   padding: var(--space-xs) var(--space-md);
   background: var(--color-accent);
   color: #fff !important;
+  border: none;
   border-radius: var(--radius-sm);
   text-decoration: none;
   font-size: var(--font-size-sm);
   font-weight: 600;
   letter-spacing: 0.02em;
+  cursor: pointer;
   transition: opacity var(--transition-base);
 }
 
@@ -669,7 +671,8 @@ hr {
   #site-nav,
   #back-to-top,
   #theme-toggle,
-  #download-pdf {
+  #download-pdf,
+  .btn-download {
     display: none !important;
   }
 
