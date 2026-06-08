@@ -1,0 +1,204 @@
+index.html
+  3eb96b1ba668b3c5 47,50,53-56
+  9d5198c0763a1a0e 688-705,709-739,743-759
+  0dc5bf1d3abb8d38 363,365-366
+  02b99db816f7e03f 740-742
+  ea8d18239833aa9a 43
+  15d0c7acf465683c 436-437,439
+  7f646d369efe59c3 74,77,80
+  a4dc006359f3883e 496
+  88b3f8b803a8d04d 7
+  e98064c319f05c0f 706-708
+  8b4b5541e1cf5260 29
+js/main.js
+  58cfb10c132133d4 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "3b6a17c17a1b6ee943e79c7117f4156ea50a868d",
+  "prompts": {
+    "02b99db816f7e03f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-3cdf4ff1-2a06-49d7-85ea-d4e54ffccdcd",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 3,
+      "total_deletions": 0,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "0dc5bf1d3abb8d38": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-4ebe178c-8758-44b8-ab7e-a1c054328d83",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 3,
+      "total_deletions": 3,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "15d0c7acf465683c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-7214ac9a-8c28-49d0-8418-51ac7eea99cf",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 3,
+      "total_deletions": 3,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "35c486973de61ae1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-2d25f4ba-1999-43d0-9e10-bdda05914647",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 7,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    },
+    "3eb96b1ba668b3c5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-d4c84b94-9edb-407f-89ab-70a779c5186c",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 6,
+      "total_deletions": 3,
+      "accepted_lines": 6,
+      "overriden_lines": 0
+    },
+    "58cfb10c132133d4": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-0b0e5a89-5829-46e0-a9d2-3c7b0c716a88",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    },
+    "6a2cc8c7574c1d12": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-2de0eb96-ad9d-45e4-82c3-8493b7065c6c",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 0,
+      "total_deletions": 67,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    },
+    "7f646d369efe59c3": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-974e51e3-f37a-4d85-92a8-45152e7af34a",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 3,
+      "total_deletions": 9,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "88b3f8b803a8d04d": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-b4c35cf1-455d-4430-92dc-9e3c34f9f48c",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    },
+    "8b4b5541e1cf5260": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-9b44138a-a566-4d05-8b64-28b9a6ba6958",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    },
+    "9d5198c0763a1a0e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-39531e64-b925-43c4-8c03-1f6da000769f",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 66,
+      "total_deletions": 0,
+      "accepted_lines": 66,
+      "overriden_lines": 0
+    },
+    "a4dc006359f3883e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-87d10d01-52fa-4ad6-ac64-1424fd720c88",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    },
+    "e98064c319f05c0f": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-c6ad6490-eafd-43ae-9dfe-bfae89501479",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 3,
+      "total_deletions": 0,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "ea8d18239833aa9a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-c8c794b3-3d1d-4917-a77e-3153acc74d97",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
