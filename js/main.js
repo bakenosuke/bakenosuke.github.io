@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var MAX_YEARS = 20;
+  var MAX_YEARS = 18;
   var MAX_TENURE_MONTHS = 120;
 
   // ── Theme ────────────────────────────────────────────────
