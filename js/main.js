@@ -2,7 +2,6 @@
   'use strict';
 
   var MAX_YEARS = 18;
-  var MAX_TENURE_MONTHS = 120;
 
   // ── Theme ────────────────────────────────────────────────
   var themeToggle = document.getElementById('theme-toggle');
@@ -75,6 +74,7 @@
         if (entry.isIntersecting) {
           var bar = entry.target;
           bar.style.width = bar.dataset.width;
+          if (bar.dataset.left) bar.style.left = bar.dataset.left;
           bar.setAttribute('aria-valuenow', parseFloat(bar.dataset.width));
           io.unobserve(bar);
         }
@@ -100,6 +100,10 @@
 
   // ── Experience bar widths (driven by tenure duration) ─────
   function initExperienceBars() {
+    var CAREER_START = new Date('2008-06-01');
+    var NOW = new Date();
+    var totalMs = NOW - CAREER_START;
+
     document.querySelectorAll('article.experience').forEach(function (article) {
       var bar = article.querySelector('.experience-level-bar .progress-bar');
       if (!bar) return;
@@ -107,19 +111,16 @@
       var times = article.querySelectorAll('.experience-dates time[datetime]');
       if (!times.length) return;
 
-      var startStr = times[0].getAttribute('datetime');
-      var endStr = times[1] ? times[1].getAttribute('datetime') : null;
+      var start = new Date(times[0].getAttribute('datetime') + '-01');
+      var end = times[1] ? new Date(times[1].getAttribute('datetime') + '-01') : NOW;
 
-      var start = new Date(startStr + '-01');
-      var end = endStr ? new Date(endStr + '-01') : new Date();
+      var leftPct  = Math.max(0, Math.min(((start - CAREER_START) / totalMs) * 100, 100));
+      var widthPct = Math.max(0, Math.min(((end - start) / totalMs) * 100, 100 - leftPct));
 
-      var months = (end.getFullYear() - start.getFullYear()) * 12 +
-                   (end.getMonth() - start.getMonth());
-      months = Math.max(1, months);
-
-      var pct = Math.min((months / MAX_TENURE_MONTHS) * 100, 100);
-      bar.dataset.width = pct.toFixed(2) + '%';
-      bar.title = Math.round(months / 12 * 10) / 10 + ' years';
+      bar.dataset.left  = leftPct.toFixed(2) + '%';
+      bar.dataset.width = widthPct.toFixed(2) + '%';
+      bar.title = times[0].textContent.trim() + ' \u2013 ' +
+                  (times[1] ? times[1].textContent.trim() : 'Present');
     });
   }
 
