@@ -1,0 +1,23 @@
+js/main.js
+  88aabcc49c59b9cd 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.0.40",
+  "base_commit_sha": "0e3cbcba25e635fcd3277e67c85ffa84b4e50dbd",
+  "prompts": {
+    "88aabcc49c59b9cd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "opencode-transcript-ses_159acca97ffeFDbLHfNNcaGixS-45eb81f3-6177-4c9e-9f07-77961d416417",
+        "model": "unknown"
+      },
+      "human_author": "Bo Wang <Bo.Wang4@cba.com.au>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 1,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
