@@ -686,6 +686,14 @@ hr {
     flex: 0 0 50% !important;
   }
 
+  hr.experience-break {
+    display: block;
+    border: none;
+    page-break-after: always;
+    break-after: page;
+    margin: 0;
+  }
+
   .visible-print-block {
     display: block;
   }
