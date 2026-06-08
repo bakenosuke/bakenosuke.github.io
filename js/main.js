@@ -2,6 +2,7 @@
   'use strict';
 
   var MAX_YEARS = 20;
+  var MAX_TENURE_MONTHS = 120;
 
   // ── Theme ────────────────────────────────────────────────
   var themeToggle = document.getElementById('theme-toggle');
@@ -27,6 +28,22 @@
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
       setThemeIcon();
+    });
+  }
+
+  // ── Mobile nav toggle ─────────────────────────────────────
+  var navToggle = document.getElementById('nav-toggle');
+  var navLinks = document.getElementById('nav-links');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function () {
+      var open = navLinks.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    document.addEventListener('click', function (e) {
+      if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
@@ -81,6 +98,31 @@
     });
   }
 
+  // ── Experience bar widths (driven by tenure duration) ─────
+  function initExperienceBars() {
+    document.querySelectorAll('article.experience').forEach(function (article) {
+      var bar = article.querySelector('.experience-level-bar .progress-bar');
+      if (!bar) return;
+
+      var times = article.querySelectorAll('.experience-dates time[datetime]');
+      if (!times.length) return;
+
+      var startStr = times[0].getAttribute('datetime');
+      var endStr = times[1] ? times[1].getAttribute('datetime') : null;
+
+      var start = new Date(startStr + '-01');
+      var end = endStr ? new Date(endStr + '-01') : new Date();
+
+      var months = (end.getFullYear() - start.getFullYear()) * 12 +
+                   (end.getMonth() - start.getMonth());
+      months = Math.max(1, months);
+
+      var pct = Math.min((months / MAX_TENURE_MONTHS) * 100, 100);
+      bar.dataset.width = pct.toFixed(2) + '%';
+      bar.title = Math.round(months / 12 * 10) / 10 + ' years';
+    });
+  }
+
   // ── Scroll-reveal ─────────────────────────────────────────
   function initReveal() {
     var io = new IntersectionObserver(function (entries) {
@@ -109,14 +151,14 @@
 
   // ── Active nav link on scroll ─────────────────────────────
   function initNavHighlight() {
-    var sections = document.querySelectorAll('section[id], div[id]');
-    var navLinks = document.querySelectorAll('#site-nav .nav-links a[href^="#"]');
-    if (!navLinks.length) return;
+    var sections = document.querySelectorAll('main > section[id], header[id]');
+    var navAnchors = document.querySelectorAll('#site-nav .nav-links a[href^="#"]');
+    if (!navAnchors.length) return;
 
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
-        navLinks.forEach(function (a) {
+        navAnchors.forEach(function (a) {
           a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
         });
       });
@@ -129,6 +171,7 @@
   function init() {
     buildTechTags();
     initSkillBars();
+    initExperienceBars();
     animateProgressBars();
     initReveal();
     initBackToTop();

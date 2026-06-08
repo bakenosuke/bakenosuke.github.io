@@ -1,8 +1,4 @@
-/* ============================================================
-   CSS Custom Properties (Design Tokens)
-   ============================================================ */
 :root {
-  /* Colours */
   --color-bg:            #ffffff;
   --color-surface:       #f8f9fa;
   --color-border:        #dee2e6;
@@ -19,32 +15,27 @@
   --color-tag-bg:        #e9ecef;
   --color-tag-text:      #495057;
 
-  /* Spacing */
   --space-xs:  4px;
   --space-sm:  8px;
   --space-md:  16px;
   --space-lg:  24px;
   --space-xl:  32px;
 
-  /* Typography */
-  --font-base:   system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-base:      system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-size-base: 14px;
   --font-size-sm:   12px;
   --font-size-lg:   16px;
   --font-size-xl:   20px;
   --font-size-2xl:  24px;
 
-  /* Radius / Shadow */
   --radius-sm:   4px;
   --radius-md:   8px;
   --shadow-card: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
 
-  /* Transitions */
   --transition-base: 0.2s ease;
   --transition-slow: 0.4s ease;
 }
 
-/* Dark mode tokens */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --color-bg:          #1a1b1e;
@@ -65,7 +56,6 @@
   }
 }
 
-/* Manual dark-mode override */
 [data-theme="dark"] {
   --color-bg:          #1a1b1e;
   --color-surface:     #25262b;
@@ -102,9 +92,6 @@
   --color-tag-text:      #495057;
 }
 
-/* ============================================================
-   Base / Reset
-   ============================================================ */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -119,7 +106,12 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   transition: background-color var(--transition-slow), color var(--transition-slow);
-  padding-top: 52px; /* offset for sticky nav */
+  padding-top: 52px;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -146,9 +138,6 @@ hr {
   margin: var(--space-lg) 0;
 }
 
-/* ============================================================
-   Sticky Navigation
-   ============================================================ */
 #site-nav {
   position: fixed;
   top: 0;
@@ -208,7 +197,25 @@ hr {
   opacity: 1;
 }
 
-/* Dark mode toggle button */
+#nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  line-height: 1;
+  transition: border-color var(--transition-base), color var(--transition-base);
+  flex-shrink: 0;
+}
+
+#nav-toggle:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
 #theme-toggle {
   background: none;
   border: 1px solid var(--color-border);
@@ -227,9 +234,6 @@ hr {
   color: var(--color-accent);
 }
 
-/* ============================================================
-   Cards
-   ============================================================ */
 .card {
   margin-top: var(--space-md);
   background-color: var(--color-bg);
@@ -253,9 +257,6 @@ hr {
   transition: background-color var(--transition-slow), color var(--transition-slow);
 }
 
-/* ============================================================
-   Profile / Header Section
-   ============================================================ */
 #header .card {
   border-radius: var(--radius-md);
 }
@@ -286,7 +287,11 @@ hr {
   opacity: 1;
 }
 
-/* Download PDF button in header */
+#location {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+}
+
 .btn-download {
   display: inline-flex;
   align-items: center;
@@ -308,7 +313,6 @@ hr {
   opacity: 0.85;
 }
 
-/* Social icons */
 .social img {
   height: 20px;
   width: 20px;
@@ -325,9 +329,6 @@ hr {
   margin-bottom: 0;
 }
 
-/* ============================================================
-   Skills
-   ============================================================ */
 .skill {
   padding: var(--space-sm) 0 0;
 }
@@ -337,7 +338,6 @@ hr {
   margin-top: var(--space-sm);
 }
 
-/* Flexbox replaces float */
 .skill-inner {
   display: flex;
   align-items: flex-start;
@@ -375,20 +375,16 @@ hr {
   font-weight: 500;
 }
 
-/* ============================================================
-   Experience
-   ============================================================ */
 .experience {
   position: relative;
   padding-left: var(--space-sm);
 }
 
-/* Timeline left border */
-#experiences .experience + .experience {
+#experiences .experience + .experience,
+#other-experience .experience + .experience {
   margin-top: var(--space-xl);
 }
 
-/* Flexbox replaces float */
 .experience-header {
   display: flex;
   align-items: flex-start;
@@ -459,20 +455,19 @@ hr {
   grid-template-columns: 1fr;
 }
 
-#experiences ul {
+#experiences ul,
+#other-experience ul {
   padding-left: var(--space-lg);
   margin-bottom: 0;
 }
 
-#experiences li {
+#experiences li,
+#other-experience li {
   color: var(--color-text-muted);
   margin-bottom: var(--space-xs);
   line-height: 1.6;
 }
 
-/* ============================================================
-   Progress Bars
-   ============================================================ */
 .skill-level-bar,
 .education-level-bar,
 .certification-level-bar,
@@ -491,7 +486,7 @@ hr {
 .progress-bar {
   border-radius: 99px;
   transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 0; /* animated in by JS */
+  width: 0;
 }
 
 .bg-skill {
@@ -502,9 +497,6 @@ hr {
   background-color: var(--color-bar-exp);
 }
 
-/* ============================================================
-   Technology Tag Pills
-   ============================================================ */
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
@@ -525,9 +517,6 @@ hr {
   transition: background var(--transition-base), color var(--transition-base);
 }
 
-/* ============================================================
-   Education
-   ============================================================ */
 .education-logo,
 .certification-logo {
   flex-shrink: 0;
@@ -569,9 +558,6 @@ hr {
   margin-top: var(--space-xs);
 }
 
-/* ============================================================
-   Scroll-Reveal Animation
-   ============================================================ */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -583,9 +569,6 @@ hr {
   transform: translateY(0);
 }
 
-/* ============================================================
-   Back-to-Top Button
-   ============================================================ */
 #back-to-top {
   position: fixed;
   bottom: var(--space-xl);
@@ -617,9 +600,6 @@ hr {
   opacity: 0.85;
 }
 
-/* ============================================================
-   Footer
-   ============================================================ */
 #footer {
   margin-top: var(--space-xl);
   padding: var(--space-lg) 0;
@@ -631,16 +611,43 @@ hr {
   display: none;
 }
 
-/* ============================================================
-   Responsive
-   ============================================================ */
 @media (max-width: 767px) {
   body {
     padding-top: 48px;
   }
 
+  #nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #site-nav .nav-links {
     display: none;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    right: 0;
+    background: var(--color-nav-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-sm) 0;
+  }
+
+  #site-nav .nav-links.nav-open {
+    display: flex;
+  }
+
+  #site-nav .nav-links li {
+    width: 100%;
+  }
+
+  #site-nav .nav-links a {
+    display: block;
+    padding: var(--space-sm) var(--space-lg);
   }
 
   .experience-summary-grid {
@@ -657,9 +664,6 @@ hr {
   }
 }
 
-/* ============================================================
-   Print
-   ============================================================ */
 @media print {
   body {
     font-size: 11px;
@@ -671,6 +675,7 @@ hr {
   #site-nav,
   #back-to-top,
   #theme-toggle,
+  #nav-toggle,
   #download-pdf,
   .btn-download {
     display: none !important;
@@ -702,17 +707,17 @@ hr {
     display: none;
   }
 
-  a[href]:after {
+  #view-online a[href]:after {
     content: "";
-  }
-
-  #footer a[href]:after {
-    content: " (" attr(href) ")";
   }
 
   .card {
     box-shadow: none;
     border: 1px solid #ccc;
+    break-inside: auto;
+  }
+
+  article.experience {
     break-inside: avoid;
   }
 
