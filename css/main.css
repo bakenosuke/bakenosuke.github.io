@@ -676,6 +676,16 @@ hr {
     display: none !important;
   }
 
+  #skills {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  #skills .skills-section {
+    width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+
   .visible-print-block {
     display: block;
   }
