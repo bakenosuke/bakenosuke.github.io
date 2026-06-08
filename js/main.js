@@ -64,24 +64,13 @@
     });
   }
 
-  // ── Progress bars (IntersectionObserver) ─────────────────
+  // ── Progress bars (set immediately) ──────────────────────
   function animateProgressBars() {
-    var bars = document.querySelectorAll('.progress-bar[data-width]');
-    if (!bars.length) return;
-
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var bar = entry.target;
-          bar.style.width = bar.dataset.width;
-          if (bar.dataset.left) bar.style.left = bar.dataset.left;
-          bar.setAttribute('aria-valuenow', parseFloat(bar.dataset.width));
-          io.unobserve(bar);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    bars.forEach(function (bar) { io.observe(bar); });
+    document.querySelectorAll('.progress-bar[data-width]').forEach(function (bar) {
+      bar.style.width = bar.dataset.width;
+      if (bar.dataset.left) bar.style.left = bar.dataset.left;
+      bar.setAttribute('aria-valuenow', parseFloat(bar.dataset.width));
+    });
   }
 
   // ── Skill bar widths ──────────────────────────────────────

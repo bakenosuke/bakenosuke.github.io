@@ -485,8 +485,6 @@ hr {
 
 .progress-bar {
   border-radius: 99px;
-  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-              left  0.8s cubic-bezier(0.4, 0, 0.2, 1);
   width: 0;
 }
 
@@ -708,6 +706,11 @@ hr {
   #skills .skills-section {
     width: 50% !important;
     flex: 0 0 50% !important;
+  }
+
+  #experiences {
+    break-before: page;
+    page-break-before: always;
   }
 
   hr.experience-break {
