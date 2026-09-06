@@ -93,15 +93,22 @@
     var NOW = new Date();
     var totalMs = NOW - CAREER_START;
 
+    function parseExperienceDate(value) {
+      return new Date(/^\d{4}-\d{2}$/.test(value) ? value + '-01' : value);
+    }
+
     document.querySelectorAll('article.experience').forEach(function (article) {
       var bar = article.querySelector('.experience-level-bar .progress-bar');
       if (!bar) return;
 
-      var times = article.querySelectorAll('.experience-dates time[datetime]');
+      var dates = article.querySelector('.experience-dates');
+      if (!dates) return;
+
+      var times = dates.querySelectorAll('time[datetime]');
       if (!times.length) return;
 
-      var start = new Date(times[0].getAttribute('datetime') + '-01');
-      var end = times[1] ? new Date(times[1].getAttribute('datetime') + '-01') : NOW;
+      var start = parseExperienceDate(times[0].getAttribute('datetime'));
+      var end = times[1] ? parseExperienceDate(times[1].getAttribute('datetime')) : NOW;
 
       var leftPct  = Math.max(0, Math.min(((start - CAREER_START) / totalMs) * 100, 100));
       var widthPct = Math.max(0, Math.min(((end - start) / totalMs) * 100, 100 - leftPct));
