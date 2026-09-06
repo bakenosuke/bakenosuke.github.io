@@ -444,6 +444,17 @@ hr {
   margin-top: var(--space-xs);
 }
 
+.experience-previous-role {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-xs);
+}
+
+.experience-previous-role strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
 .experience-summary-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
